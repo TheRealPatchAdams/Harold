@@ -1,10 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Harold's Flask App</title>
-</head>
-<body>
-    <h1>Hello, Harold!</h1>
-    <p>Welcome to your Flask app.</p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Home - Harold App{% endblock %}
+
+{% block content %}
+<div class="text-center mt-4">
+    <h2>Harold is currently inactive.</h2>
+    <p class="text-danger">Report Problem <i class="fas fa-exclamation-triangle"></i></p>
+    <p>ID: 01234</p>
+
+    <!-- Icon Buttons Section -->
+    <div class="row justify-content-center mt-4">
+        <div class="col-4">
+            <div class="icon-container text-center p-3">
+                <i class="fas fa-eye fa-3x"></i>
+                <p>See His View</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="icon-container text-center p-3">
+                <i class="fas fa-question-circle fa-3x"></i>
+                <p>Questions</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="icon-container text-center p-3">
+                <i class="fas fa-wrench fa-3x"></i>
+                <p>Options</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

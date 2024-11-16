@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Schedule Service{% endblock %}
+
+{% block content %}
+<h2>Schedule a Service</h2>
+<form method="POST" action="{{ url_for('main.schedule') }}">
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

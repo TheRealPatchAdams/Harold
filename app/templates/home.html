@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h2>Hello, {{ current_user.username }}!</h2>
+<p>Here’s your dashboard to manage Harold’s activities:</p>
+<ul>
+    <li><a href="{{ url_for('main.schedule') }}">Schedule Service</a></li>
+    <li><a href="{{ url_for('main.track') }}">Track Harold</a></li>
+    <li><a href="{{ url_for('main.logout') }}">Logout</a></li>
+</ul>
+{% endblock %}

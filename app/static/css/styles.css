@@ -1,0 +1,71 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+  
+  .app-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+  }
+  
+  .app-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .app-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-top: 1px solid #333;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .footer-link i {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .app-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .footer-link {
+      font-size: 12px;
+    }
+  
+    .footer-link i {
+      font-size: 16px;
+    }
+  }
+  
